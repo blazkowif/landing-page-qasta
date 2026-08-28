@@ -102,7 +102,7 @@
   /* ---------- hero ---------- */
   .hero{
     padding:88px 0 64px;
-    display:grid; grid-template-columns:1.25fr .95fr; gap:56px; align-items:center;
+    display:grid; grid-template-columns:1.25fr .95fr; gap:56px; align-items:flex-start;
     position:relative;
   }
   @media (max-width:900px){ .hero{grid-template-columns:1fr; padding:56px 0 40px;} }
@@ -130,7 +130,7 @@
   .btn-ghost:hover{border-color:var(--cyan); color:var(--cyan-ink); box-shadow:0 0 16px var(--cyan-dim); transform:translateY(-1px);}
 
   /* ---------- hero photo / scan frame (signature element) ---------- */
-  .hero-photo{display:flex; flex-direction:column; gap:18px;}
+  .hero-photo{display:flex; flex-direction:column; gap:18px; margin-top:48px; margin-left:32px;}
   .scan-frame{
     position:relative; width:min(280px,72vw); aspect-ratio:1/1.02;
     background:var(--paper-2); border:1px solid var(--line); overflow:hidden;
