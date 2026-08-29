@@ -102,7 +102,7 @@
   /* ---------- hero ---------- */
   .hero{
     padding:88px 0 64px;
-    display:grid; grid-template-columns:1.25fr .95fr; gap:56px; align-items:flex-start;
+    display:grid; grid-template-columns:1.25fr .95fr; gap:56px; align-items:center;
     position:relative;
   }
   @media (max-width:900px){ .hero{grid-template-columns:1fr; padding:56px 0 40px;} }
@@ -130,12 +130,12 @@
   .btn-ghost:hover{border-color:var(--cyan); color:var(--cyan-ink); box-shadow:0 0 16px var(--cyan-dim); transform:translateY(-1px);}
 
   /* ---------- hero photo / scan frame (signature element) ---------- */
-  .hero-photo{display:flex; flex-direction:column; gap:18px; margin-top:48px; margin-left:32px;}
+  .hero-photo{display:flex; flex-direction:column; gap:18px;}
   .scan-frame{
     position:relative; width:min(280px,72vw); aspect-ratio:1/1.02;
     background:var(--paper-2); border:1px solid var(--line); overflow:hidden;
   }
-  .scan-frame img{width:100%; height:100%; object-fit:cover; filter:grayscale(.06) contrast(1.02);}
+  .scan-frame img{width:100%; height:100%; object-fit:cover; object-position:center 85%; filter:grayscale(.06) contrast(1.02);}
   .corner{position:absolute; width:20px; height:20px; border:0 solid var(--cyan);}
   .corner.tl{top:-1px; left:-1px; border-top-width:2px; border-left-width:2px;}
   .corner.tr{top:-1px; right:-1px; border-top-width:2px; border-right-width:2px;}
